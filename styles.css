@@ -623,6 +623,34 @@ h3 {
   padding: 26px;
 }
 
+.people-grid article:last-child {
+  grid-column: span 2;
+}
+
+.student-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #71717a;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.student-list li {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 14px;
+}
+
+.student-list span {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 .join-section {
   padding: clamp(58px, 7vw, 76px) 0;
   background:
@@ -873,6 +901,15 @@ h3 {
   .people-grid,
   .join-section ul {
     grid-template-columns: 1fr;
+  }
+
+  .people-grid article:last-child {
+    grid-column: span 1;
+  }
+
+  .student-list li {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 10px;
   }
 
   .news-grid article {
