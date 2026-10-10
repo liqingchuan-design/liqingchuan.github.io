@@ -617,6 +617,17 @@ h3 {
   font-size: 17px;
 }
 
+.publication-list h3 a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(124, 58, 237, 0.35);
+  text-underline-offset: 4px;
+}
+
+.publication-list h3 a:hover {
+  color: var(--accent);
+}
+
 .publication-authors {
   margin-bottom: 0;
   color: var(--muted);
