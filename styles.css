@@ -487,6 +487,56 @@ h3 {
   background: #ffffff;
 }
 
+.project-support {
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-support-label {
+  margin: 0 0 9px !important;
+  color: var(--accent) !important;
+  font-size: 11px !important;
+  font-weight: 700;
+  line-height: 1.4 !important;
+  text-transform: uppercase;
+}
+
+.project-support ul {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-support li {
+  padding-left: 10px;
+  border-left: 2px solid #e9d5ff;
+}
+
+.project-support .grant-heading,
+.project-support .grant-name {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.project-support .grant-heading {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.project-support .grant-period {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.project-support .grant-name {
+  margin-top: 2px;
+  color: var(--muted);
+}
+
 .project-carousel {
   position: relative;
   overflow: hidden;
@@ -499,6 +549,20 @@ h3 {
 .carousel-track {
   position: relative;
   aspect-ratio: 16 / 10;
+}
+
+.project-auto-gallery {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 24px;
+}
+
+.project-auto-gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft-2);
 }
 
 .carousel-track img {
